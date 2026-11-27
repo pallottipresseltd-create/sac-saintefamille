@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fdfdfd;
+  --foreground: #212529;
+
+  /* SAC-PSF Brand Colors */
+  --psf-gold: #996600;
+  --psf-gold-light: #ffcc66;
+  --psf-gold-dark: #7a5200;
+  --psf-ochre: #663300;
+  --psf-crimson: #990000;
+  --psf-cream: #fbf9f5;
+  --psf-dark: #1a1a1a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-psf-gold: var(--psf-gold);
+  --color-psf-gold-light: var(--psf-gold-light);
+  --color-psf-gold-dark: var(--psf-gold-dark);
+  --color-psf-ochre: var(--psf-ochre);
+  --color-psf-crimson: var(--psf-crimson);
+  --color-psf-cream: var(--psf-cream);
+  --color-psf-dark: var(--psf-dark);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Utilities for smooth transitions and typography */
+html {
+  scroll-behavior: smooth;
+}
